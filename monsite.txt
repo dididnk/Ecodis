@@ -1,0 +1,21 @@
+https://emmanuel-ngbame-koyapolo.emi.u-bordeaux.fr/
+
+
+
+COMMENTAIRE:
+
+Je tiens à préciser que le site tourne avec une base des données Mysql mais ce pendant lors du dépot sur ENT je n'ai pas pu importé la base.
+
+BDD : bdd_ecodis
+TABLES: users(id, prenom, nom, sexe, tel, mail, password)
+	question(id, noms, mail, tel, sujet, message)
+
+Donc au lieu d'essayé de vous connecter à la page d'après, un /MyPage.php serait mieux
+
+Les deux pages web sont les fichiers: index.php et MyPage.php 
+Faute de temps,je m'en excuse, je n'ai pas pu:
+
+Mettre trop de JS, optimiser le code, nommer correctement les classes, Faire un site Responsive,
+le tableau(perso:je sais le faire, j'en ai pratiquement pas eu besoin)
+
+NGBAME KOYAPOLO Emmanuel
