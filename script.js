@@ -40,14 +40,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Etudiant", "Analyste", "Programmeur", "Développeur","Ecrivain"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Etudiant", "Analyste", "Programmeur", "Développeur","Ecrivain"],
+        strings: ["Chrétiens", "hommes Spirituels", "Croyants", "Curieux"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
