@@ -243,9 +243,11 @@ section .title::after{
 }
 .about .about-content .right h3{
     color: rgb(50, 138, 179);
+    padding-left: 10px;
 }
 .about .about-content .right p{
     text-align: justify;
+    padding-left: 20px;
 }
 
 
