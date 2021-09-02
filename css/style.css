@@ -164,7 +164,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background-image: url("https://dididnk.github.io/Ecodis/images/Mybackground.jpg");
+    background-image: url("https://dididnk.github.io/Ecodis/images/Mybackground.jpg") no-repeat center center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
