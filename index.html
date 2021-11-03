@@ -1,454 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <!-- Import JQuery.js, Bootstrap and JS from CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Font awesome 4 -->
         <script src="https://kit.fontawesome.com/cabff833b6.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <title>EcoDis</title>
+
+        <!-- Import JS and CSS localy -->
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Ecole des disciples</title>
     </head>
-<body>
+    <body>
+    <!------------------------Header section-------------------------->
     <header>
-        <nav class="navbar">
-            <div class="max-width">
-                <div class="logo"><a href="#"><span>Eco</span>D✞s</a></div>
-                <ul class="menu">
-                    <li><a href="#home" class="menu-btn">Menu</a></li>
-                    <li><a href="#about" class="menu-btn">A propos</a></li>
-                    <li><a href="#contenu" class="menu-btn">Contenu</a></li>
-                    <li><a href="#Question" class="menu-btn">Question</a></li>
-                    <li><a href="quiz.html" class="menu-btn">Test</a></li>
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><span class="logo">EcoD✞s</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">A PROPOS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#reference">REFERENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#temoignage">TEMOIGNAGE</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
                 </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </section>
+        <!------------------------Banner section-------------------------->
+
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="presentation-title">ECOLE DES DSCIPLES</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae itaque neque, ab minima dolorem facere nulla et. Aperiam, ducimus debitis?</p>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <!-- <img src="images/_zigzag.png" class="zigzag-img"> -->
+        </section>
     </header>
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Bienvenue à</div>
-                <div class="text-2">L'École de D✞sciples</div>
-                <div class="text-3">ÉcoDis est une école gratuite destinée aux <span class="typing"></span></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">Qui sommes-nous?</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="https://dididnk.github.io/Ecodis/images/hands.jpg">
+    <!------------------------About section-------------------------->
+    
+    <section id="about">
+        <div class="container text-center">
+            <h2 class="title">ECODIS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, est odio officiis ut maiores nobis dolore iure quisquam porro quo, qui nemo unde fugiat quod impedit earum magnam quos tempora.</p>
+            <div class="row"><div class="col-md-6 about-left">
+                    <img src="images/_about.jpg" class="about-left-img">
                 </div>
-                <div class="column right">
-                    <div class="text">École de disciples (ÉcoDis) </div>
-                    <p>
-                        La vie Chréienne peut parfois sembler différente de ce qu'elle serait pour un
-                        non-croyant. <br>
-                        Par exemple, au lieu de chérir les possessions et accomplissements de ce monde,
-                        tu ressentiras
-                        une plus grande satisfaction en entretenant
-                        ta relation avec le Seigneur et en suivant ses commandements. <br> En faisant de
-                        ces choses une
-                        priorité, tu commenceras inévitablement à te sentir plus apaisé(e),
-                        satisfait(e), et tu te
-                        sentiras plus à même d'affronter les difficultés
-                        qui se mettront en travers de ton chemin.
-                    </p>
-                    <p>
-                        Car, Dieu a tellement aimé le monde qu’il a donné son Fils unique. <br> Ainsi, tous ceux qui croient
-                        en lui ne se perdront pas loin de Dieu, mais ils vivront avec lui pour toujours
-                        <em>(Jean 3:16).</em>
-                        Mais vivez comme la Bonne Nouvelle du Christ le demande. Ainsi, si je viens, je vous verrai,
-                        et si je ne viens pas, j’entendrai parler de vous. Alors je saurai que vous restez solides,
-                        très unis entre vous, et que vous luttez ensemble et d’un même cœur,pour garder la foi que la
-                        Bonne Nouvelle apporte
-                        <em>(1 Philippiens 1:27).</em>
-                    </p>
+                <div class="col-md-6 about-right">
+                    <h4>Qui sommmes-nous ?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, officiis ea sequi debitis dignissimos veritatis, facere totam repellendus quia deleniti vitae necessitatibus? Dolorum, nemo debitis. Magnam possimus nulla reprehenderit! Asperiores neque esse atque molestiae accusamus, illum adipisci placeat quas explicabo in ea blanditiis exercitationem. Quisquam aspernatur obcaecati odit officia recusandae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, officiis ea sequi debitis dignissimos veritatis, facere totam repellendus quia deleniti vitae necessitatibus? Dolorum, nemo debitis. Magnam possimus nulla reprehenderit! Asperiores neque esse atque molestiae accusamus, illum adipisci placeat quas explicabo in ea blanditiis exercitationem. Quisquam aspernatur obcaecati odit officia recusandae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, officiis ea sequi debitis dignissimos veritatis, facere totam repellendus quia deleniti vitae necessitatibus? Dolorum, nemo debitis. Magnam possimus nulla reprehenderit! Asperiores neque esse atque molestiae accusamus, illum adipisci placeat quas explicabo in ea blanditiis exercitationem. Quisquam aspernatur obcaecati odit officia recusandae.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contenu section start -->
-    <section class="contenu" id="contenu">
-        <div class="max-width">
-            <h2 class="title">Contenu de la formation</h2>
-            <div class="ctn-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-baby"></i>
-                        <div class="text"><a href="#n_naissance">Nouvelle naissance</a></div>
-                        <p>
-                            En effet, Dieu a envoyé son Fils dans le monde non pas pour condamner le monde, mais pour qu'il soit sauvé par lui <em>(Jean 3:16).</em>
-                            Croire en Dieu, c’est une façon de posséder déjà les biens qu’on espère, c’est être persuadé que les choses qu’on ne voit pas existent vraiment
-                            <em>(1 Hébreux 11:1).</em>
-                        </p>
-                        <p>
-                            <span class="end-word">Dans cette section on parlera de la Base d'une vie Chrétienne.</span>
-                        </p>
-                    </div>
+    <!------------------------reference section-------------------------->
+
+    <section class="reference" id="reference">
+        <div class="container text-center">
+            <h2 class="title">ECODIS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, est odio officiis ut maiores nobis dolore iure quisquam porro quo, qui nemo unde fugiat quod impedit earum magnam quos tempora.</p>
+            <div class="row reference-zone">
+                <div class="col-md-4 reference reference-1">
+                    <img src="images/_content.jpg" class="reference-img">
+                    <h4>Naître de Nouveau</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus perspiciatis! Voluptas deserunt esse vel architecto quasi veritatis, sapiente ipsa dolor. Commodi in saepe, dolore necessitatibus delectus sit nemo. Rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus perspiciatis! Voluptas deserunt esse vel architecto quasi veritatis, sapiente ipsa dolor. Commodi in saepe, dolore necessitatibus delectus sit nemo. Rem!</p>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-running"></i>
-                        <div class="text"><a href="#grandir">Grandir</a></div>
-                        <p>
-                            Répète sans cesse les enseignements du livre de la loi, redis-les dans ton cœur jour et nuit. 
-                            Ainsi tu t’efforceras d’obéir à tout ce qui est écrit. De cette façon, tu mèneras tes projets avec succès et ils réussiront <em>(Josué 1:8)</em>.
-                        </p>
-                        <p>
-                            <span class="end-word">Dans cette section on parlera des choses beaucoup plus pratique pour grandir dans la vie chrétienne.</span>
-                        </p>
-                    </div>
+                <div class="col-md-4 reference reference-2">
+                    <img src="images/__content.jpg" class="reference-img">
+                    <h4>S'Affermir</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus perspiciatis! Voluptas deserunt esse vel architecto quasi veritatis, sapiente ipsa dolor. Commodi in saepe, dolore necessitatibus delectus sit nemo. Rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus perspiciatis! Voluptas deserunt esse vel architecto quasi veritatis, sapiente ipsa dolor. Commodi in saepe, dolore necessitatibus delectus sit nemo. Rem!</p>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-pray"></i>
-                        <div class="text"><a href="#discipolat">Discipolat</a></div>
-                        
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-bible"></i>
-                        <div class="text"><a href="#vie_chretienne">La Vie Chrétienne</a></div>
-                        
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-users"></i>
-                        <div class="text"><a href="#vv_monde">Vivre dans ce monde</a></div>
-                        
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-heartbeat"></i>
-                        <div class="text"><a href="#temoignage">Témoignage</a></div>
-                        
-                    </div>
+                <div class="col-md-4 reference reference-3">
+                    <img src="images/___content.jpg" class="reference-img">
+                    <h4>Devenir Disciple</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus perspiciatis! Voluptas deserunt esse vel architecto quasi veritatis, sapiente ipsa dolor. Commodi in saepe, dolore necessitatibus delectus sit nemo. Rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus perspiciatis! Voluptas deserunt esse vel architecto quasi veritatis, sapiente ipsa dolor. Commodi in saepe, dolore necessitatibus delectus sit nemo. Rem!</p>
                 </div>
             </div>
-        </div>
+            <button type="button" class="btn btn-primary">Commencer...</button>
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Commencer<span class="caret"></span>
+            </button>
         </div>
     </section>
-    <!-- section courses content -->
-    <section class="cours">
-        <div class="max-width contents">
-            <h2 id="n_naissance">Nouvelle naissance</h2>
-            <div class="content-text">
-                <p>
-                    Invite Jésus dans ta vie si ce n'est pas déjà fait. <br/>
-                    Si tu commences juste à découvrir le christianisme, tu auras besoin de devenir un disciple du Christ avant de pouvoir mener une bonne vie de chrétien.
-                    Pour devenir un de ses disciples, prie Jésus et demande-Lui de te pardonner tous les péchés que 
-                    tu as commis dans ta vie. 
-                    Demande-lui d'emplir ton cœur pour t'aider à lutter contre les tentations et pour consacrer ta vie à le suivre [1] .
-                    Dans Jean 14 : 6, Jésus dit : « Je suis le chemin, la vérité et la vie. Nul ne vient au Père que par moi. » 
-                    Ça signifie que le seul moyen d'avoir une relation avec Dieu est de suivre Jésus.
-                    Bien que la prière soit personnelle et propre à chacun, elle peut ressembler à quelque chose comme ceci : 
-                    « Seigneur, je sais que je n'ai pas toujours été parfait(e). S'il te plait, pardonne-moi tout ce temps passé à pécher, 
-                    comme lorsque j'ai été impatient(e) ou quand j'ai menti. Je veux devenir ton disciple pour être davantage comme toi. 
-                    S'il te plait, guide-moi et aide-moi à devenir une meilleure personne. Amen. »
-                </p>
-                <p>
-                    Le mot "Bible" vient du mot grec qui veut dire "les livres". La Bible est formée de nombreux écrits qui ont été réunis.
-                    Née dans l'ancien peuple d'Israël, la Bible n'est la propirété d'aucun groupe particulier, mail elle est un trésor pour tous les êtres humains.
-                </p>
-                <h3>Les deux Testaments</h3>
-                <p>
-                    La Bible chrétienne est composée de deux parties: le Premier ou Ancien et le Deuxième ou le Nouveau Testament.
-                    Le mot "Testament" vient d'un mot qui signifie aussi "alliance". Dans la Bible, c'est toujours Dieu qui a l'initiative de
-                    l'alliance avec les êtres humains. C'est lui aussi qui maintient cette alliance avec amour contre toutes leurs infidélités.
-                </p>
-                <p>
-                    Le Premier Testament, que le chrétiens appellent Ancien Testament, réunit les écritures de la première alliance. Ces écrits forments les Livres Saints des juifs,
-                    c'est-à-dire des membres du peuple d'Israël en tant que peuple de Dieu. ils racontent coment Dieu a choisi ce peuple et a fait alliance avec lui.
-                    Cette alliance est au coeur de l'Ancien Testament. Elle prend place dans celle que Dieu a établie, dès le début du monde, avec tous les peuples de la terre.
-                </p>
-                <p>
-                    Le Nouveau Testament parle de cette même alliance renouvellée par Jésus-Christ de Nazareth. Il s'agit de l'allianc que Dieu établit par son Fils Jésus-Christ ou nouvelle alliance.
-                    Elle met fin à la séparation qui s'était installée entre juifs et non-juifs. Elle concerne tous les êtres humains.
-                    La personne, l'enseignement et les actions de Jésus sont au coeur du Nouveau Testament.
-                </p>
-                <p>
-                    Jésus et les premiers chrétiens étaient juifs. Les Livres Saints était les textes qu'ils lisaient pour entrer en relation avec Dieu. C'est pourquoi les auteurs du Nouveau Testaments
-                    en citent de nobreux passages. Ceux-ci les aident à mieux comprendre la personne et le message de Jésus. <br>
-                    Pour les chrétiens, les deux testaments ne peuvent pas être séparés.
-                </p>
-                <h3><span class="first">L'ANCIEN TESTAMENT </span></h3>
-                <p>
-                    L'Ancien Testament affirme que le peuple d'Israël est le peuple choisi par Dieu pour montrer sa présence au coeur de l'humanité.
-                    Dieu fait alliance avec ce peuple, qui a la respnsabilité de respecter cette alliance. Les relations entre Dieu et son peuple est parfois difficiles.
-                    De nombreux textes reprochent au peuple ou à ses dirigeants d'abandonner l'alliance avec Dieu.
-                    Ils rappellent que l'amour de Dieu est un amour exigeant. Beaucoup d'histoires de l'Ancien Testament racontent des guerres,
-                    conflits, des injustices. La violence qui existe dans le monde y apparaît. Les réalités humaines sont décrites sans rien cacher.
-                    C'est au milieu de ces réalités que Dieu parle.
-                </p>
-                <p>
-                    Dès le début, l'Ancien Testament présente un Dieu qui agit dans le monde par la parole.
-                    Cette parole invite des dommes et des femmes à se mettre débout, à créer du nouveau.
-                    C'est ainsi que Dieu appelle Abraham, Moîse, des prophètes... Il s'adresse au peiple d'Israël par l'intermédiaire de messagers
-                    qui communiques ses paroles. Il s'adresse aussi à des étrangers comme Cyrus, le roi de Perse. Comme toute la Bible, les textes de l'Ancien
-                    Testament parlent de la part de Dieu à tous les êtres humains, de génération en génération.
-                </p>
-                <h3>Le message de la Bible prend vie dans l'histoire et les cultures humaine</h3>
-                <p>
-                    Les écrits contenus dans la Bible sont très variés : on y trouve des récits, des lois, des discours, des prières,
-                    des poèmes, des lettres, etc. Leur rédaction a pris sans doute plus de mille ans. Leurs auteurs ont vécu à différents de l'histoire,
-                    et ilsappartiennent à des cultures diverses.
-                </p>
-                <p>
-                    L'Ancien Testament est écrit en hébreu, avec de rares passages en araméen, une langue proche de l'hébreu. Son cadre général est celui 
-                    de l'ancien Orientn et il couvre une longue période de l'histoire. Le Nouveau Testament est écrit en grec. Son cadre général est celui des pays
-                    situés autour de la mer Méditerrané. Ils faisaient partie d'un vaste empire : le pouvoir politique était romain, et la culture grecque.
-                </p>
-                <p>
-                    Les textes de la Bible parle de Dieu dans le cadre des réalités humaines. C'est pourquoi, à travers ces écrits, Dieu s'adresse aux femmes
-                    et aux hommes de tous les temps.
-                </p>
-                <p>
-                    Les premier texte de la Bible affirme que tout ce que Dieu a crée est bon (Genèse). La fin de la Bible parle de la nouvelle
-                    création de Dieu dans laquelle le mal et le melheur n'existeront plus (Apocalypse 21 et 22). A l'intérieur de ce grand ensemble,
-                    l'histoire de certains personnages ainsi que les événements, des sujets de réflexion, etc. sont parfois repris sous
-                    des formes semblables ou différents. Les textes de la Bible ont des liens de toutes sortes les uns avec les autres. <br>
-                    Chaque passage signifie quelque chose en lui-même, mais les points de vue divers des textes ont aussi une grande importance.
-                    Pour connaître tous les aspects d'un sujet traité par la Bible, il est donc bon de lire plusieurs textes. La lecture de la Bible n'est jamais terminée:
-                    c'est là son immense richesse.
-                </p>
-                <h3>Les noms de Dieu</h3>
-                <p>
-                    L'Ancien Testament nomme Dieu de plusieurs manières. <br>
-                    Les hommes de l'ancien Orient croyaient en des dieux. Pour eux, un dieu est être supérieur qui agit sur le monde et les être humains.
-                    Dans la Bible, Dieu avec majuscule désigne le Dieu unique. Ce Dieu entre en relation de façon particulière avec l'humanité. il le fait d'abord
-                    avec le peuple d'Israël. Quand Moîse demande à Dieu quel est son nom, celui-ci lui répond par une expression qui peut être traduite
-                    par <b>je suis qui je suis</b>, ou <b>je suis qui je serai</b> ou encore <b>je suis celui qui est</b> <em>(Exode 3:14)</em>.
-                    Le nom personnel ques les Israëlites ont donné à Dieu est formé de cette expression mystérieure. On ne sait pas comment ce nom était prononcé.
-                    En effet, par respect pour Dieu, les juifs le remplacent par <b>le Seigneur</b> quand ils lisent les textes.
-                </p>
-                <p>Traduction des noms de Dieu dans <em>Parole de Vie</em>:</p>
-                <ul>
-                    <li><b>YHWH</b> (nom personnel du Dieu d'Israël) : le SEIGNEUR.</li>
-                    <li><b>Elohim</b> (nom commun donné aux dieux, employé au pluriel) : Dieu.</li>
-                    <li><b>Adonaï</b> (mot qui veut dire <em>seigneur</em> ) : le Seigneur.</li>
-                    <li><b>Adonaï YHWH</b> : le Seigneur DIEU.</li>
-                </ul>
-                <h3>Les différents livres et l'ordre dans lequel ils sont placés</h3>
-                <p>
-                    À partir d'une certaine époque, sans doute vers le 4ème siècle avant J.C, les textes prennent beaucoup d'importance pour la relation avec
-                    avec Dieu. Un certain d'écrits constituent un canon de fait. Le canon est la liste des livres qui, tous ensemble, servent plus particulièrement
-                    à construire et à soutenir la foi en Dieu.
-                </p>
-                <p>
-                    Les textes ont été rangés d'une certaine manière. L'ordre qui leur a été donné n'est pas celui de la date à laquelle ils ont été écrits.
-                </p>
-                <h3><span class="first">LE NOUVEAU TESTAMENT</span></h3>
-                <p>
-                    Le Nouveau Testament est composé de 27 écrits qui ont été réunis au début du christianisme pour former unseul livre.
-                    Il est rédigé en grec. C'était la langue parlée au premier siècle avant J.C. dans les pays qui entourent la mer méditerrané.
-                    Ces pays faisaient parti de l'immense empire romain. Les Romains avaient le pouvoir, mais la culture était grecque.
-                </p>
-                <p>
-                    Comme l'Ancien Testament, le Nouveau Testament est écrit dans un cadre culturel et religieux différent de celui des lecteurs actuels.
-                    Une traduction ne peut pas supprimer ces différences. Ainsi, par exemple, dans la culture et la langue grecque, chacun dit <b>tu</b>
-                    à tout le monde. Le respecct, l'affection ou le mépris sont exprimés autrement. C'est pourquoi vous y trouverez différentes traductions selon les versions.
-                </p>
-                <p>
-                    Le Nouveau Testament est la deuxième partie de la Bible chrétienne. Le mot <b>testament</b> vient d'un mot qui signifie
-                    <b>alliance</b>. Une alliance est un traité de solidarité entre personnes ou des peuples. Dans la Bible, c'est toujours Dieu
-                    qui a l'initiative de l'alliance avec les êtres humains. Les Premier Testament, que les chrétiens appellent Ancien Testament, réunit
-                    les écrits de la première alliance. Ces écrits forment les Livres Saints des juifs, c'est-à-dire des membres du peuple d'Israël en tant que peuple de Dieu.
-                </p>
-                <p>
-                    Le Nouveau Testament parle de l'alliance rénouvelée par Jésus de Nazareth. Il s'agit de l'alliance que Dieu établit par son Fils Jésus-Christ ou nouvelle alliance.
-                    Elle met fin à la séparation qui s'était installée entre juifs et non-juifs. Elle concerne tous les êtres humains.
-                    La personne, l'enseignement et les actions de Jésus sont au coeur de Dieu.
-                </p>
-                <h3>Jésus-Christ de Nazareth</h3>
-                <p>
-                    Au début du premier siècle les gens se posaient beaucoup de questions sur Dieu. Un grand nombre de maîtres enseignaient à ce sujet.
-                    Jésus-Christ apparaît dans les années 30. Il est né de Nazareth en Galilée, une des régions de l'ancien pays d'Israël, occupé alors par les Romains.
-                    C'est un maître juif. Il enseigne, il guérit des malades et il acceuille tous ceux qui viennent à lui. Il dit des choses étonnantes sur Dieu et sur l'amour de Dieu pour tous.
-                    Les chefs réligieux de son temps le font condamner à mort par les Romains, et il est cloué sur une croix.
-                </p>
-                <p>
-                    Jésus avait des disciples, c'est-à-dire des gens qui écoutaient son enseignement et le suivaient. Or, ceux-ci affirment
-                    que Dieu l'a réveillé de la mort : Jésus est vivant, même s'ils ne peuvent plus le voir.
-                </p>
-                <p>
-                    Très vite, les disciples de Jésus répandent leur foi. Voici ce qu'ils annocent : Jésus est le Messie que le peuple juif attendait,
-                    c'est-à-dire celui que Dieu a choisi pour sauver les êtres humains. En grec, <b>Messie</b> se dit <b>Christ</b>. De nouvelles communautés
-                    religieuse naissent un peu partout. Elles donnent à Jésus le nom de Jésus-Christ. Leurs membres s'appellent les chrétiens, c'est-à-dire ceux qui sont croient en Jésus, le Christ.
-                </p>
-                <h3>Les livres du Nouveau Testament</h3>
-                <p>
-                    Au début, les disciples de Jésus ont parlé de leur ma^tre de façon orale. Ils ont dit comment Jésus avait changé leur vie.
-                    Au bout d'un certain temps, avec la disparition des premiers témoins, il a été nécessaire de mettre par écrit ce qui concerne Jésus. C'est ainsi que le Nouveau Testament est né.
-                </p>
-                <p>
-                    Le Nouveau Testament commence par les quatres évangiles. Le mot évangile vient du grec. Il signifie <b>bonne nouvelle</b>.
-                    Les quatre évangiles présentes, chacun à sa manière, la personne de Jésus. Ils sont suivis du livre des Actes des Apôtres. Ce livre raconte comment des apôtres,
-                    c'est-à-dire des envoyés de Jésus-Christ, ont répandu son message. C'est d'une certaine façon le journal des débuts de l'Eglise chréienne.
-                </p>
-                <p>
-                    Les lettres de l'apôtre Paul et d'autres lettres viennent ensuite. Paul écrit à des chrétiens et à des communautés chrétiennes de son temps.
-                    Il répond à leurs problèmes et à leurs besoins particuliers. Il s'adresse à des Eglises ou à des personnes précises. D'autres auteurs
-                    écrivent aussi pour soutenir et enseigner les jeunesEgises. En tout, il y a 21 lettres.
-                </p>
-                <p>
-                    Le dernier livre du Nouveau Testament, l'Apocalypse, apour but d'encourager les chrétiens dans un temps de crise.
-                    Les forces du mal semblent plus puissantes que tout. Pourtant Jésus-Christ est déjà vainqueur du mal. Par Lui, Dieu remportera un jour une victoire totale et définitive.
-                </p>
-                <h3>Les évangiles</h3>
-                <p>
-                    Les quatre évangiles présentent ce que Jésus a enseigné, comment il a vécu, comment il est mort et comment Dieu l'a réveillé de la mort.
-                </p>
-            </div>
-        </div>
-        <div class="max-width contents">
-            <h2 id="grandir">Grandir</h2>
-            <div class="content-text">
-                <p>
-                    La Bible est le livre le plus traduit, le plus vendu, le plus populaire, le plus accessible et le plus diffusé au monde.
-                </p>
-                <p>
-                    Tout chrétien qui se respecte a déjà eu l'occasion, un jour ou l'autre, d'ouvrir une Bible, de la feuilleter, d'en lire certains passages.
-                    Qui ne connaît point quelques brides au moins du récit du Paradis terrestre, du passage de la mer Rouge ou de la vie de Jésus?
-                    Qu'ils s'agissent des lectionnaires des églises, livres volumineux contitués, pour la plus grande part, de textes bibliques, ou des éditions en
-                    livres de poche, le livre de la Bibe fait partie de notre culture. Pourtant, lire la Bible est parfois décourageant. Beaucoup l'ont ouverte et redermée aussitôt
-                    , sans aller plus avant. Quel fil conducteur trouver dans cette suite de livres qui constituent la bibliothèque d'un peuple. Les lire d'un trait est un peu comme passer
-                    d'Homère à Rabelais et des chansons de Geste à Saint-Exupéry. En outre, le style, souvent nous déroute; non seulement les longueurs et les répétitions, mais les manières de parler,
-                    voire certains récits étranges ou peu édifiants qui ne sont plus de notre époque. Comme en une forêt inconnue, il est préférable de ne pas s'y aventurer sans bon guide.
-                    Mais pour y trouver quoi ?
-                </p>
-                <h3>Une mine de renseignements</h3>
-                <p>
-                    Longtemps la Bible fut la seule source d'information importante dont on disposait, concernant les peuples. On se présentait le passé comme le racontent les textes bibliques.
-                    Nombre d'oeuvres d'art dans les églises, vitraux ou fresques, sont le témoignange de cette vision naîve de l'histoire qui suivait pas à pas le texte biblique depuis Adam jusqu'à l'Apocalypse.
-                    De là vient,par exemple, que l'on comptait quatre mille ans entre la création du monde et la venue de Jésus le chiffre était obtenu en additionnant simplement les âges attribuées par la Bible aux différents personnages.
-                </p>
-                <p>
-                    Depuis deux siècles, les travaux scientifiques d'histoire et d'archéologie ont permis de se faire une idée plus rugoureuse de ce qu'est le passé de l'humanité
-                    Du coup, bien des choses qui paraissent étranges dans la Bible, déviennent compréhensibles. Non seulement les dates mais les lieux, les manières des vivre, les noms des personnes ou des peuples, les événements qui sont rapportés.
-                    Si bien bien que la Bible constitue une prodigieuse source de renseignements. Elle nous donne, avec une précision souvent étonnante pour qui sait comprendre, ce que vécurent les peuples anciens, leurs moeurs, leurs coutumes, leurs rêves aussi et leurs façons de faire.
-                </p>
-                <h3>Untrésor de sagesse</h3>
-                <p>
-                    Lire les textes anciens a toujours été considéré comme source de sagesse. A fréquenter ceux qui sont avant nous, ils est possible de voir comment ils ont vécu. La Bible, en ce sens est un prodigieux réservoir d'expérience :  celle de tout un peuple. 
-                    En lisant les histoires des ancêtres, en se racontant ce qui était arrivé à Abraham, à David, à Salomon ou aux prophètes, le peuple se renconnaît et, dans kes moments glorieux comme dans les moments tragiques de son existences, sait d'où il vient et où il va.
-                    De là viennent la richesse et la saveur des commentaires juifs de la Bible : une grande fidélité au texte et une grande liberté donnent aux textes anciens une extraordinaire actualité.
-                </p>
-                <p>
-                    De la même manière, les chrétiens trouvent dans les paroles et les événements de la voie de Jésus, ce Juifs proclamé Messie, ressuscité, une manière de voir et de vivre.
-                </p>
-                <p>
-                    La Bible est ainsi un receuil de grands exmeples et d'exeples contagieux. Certains sont légendaires, tel le fameux jugement de Salomon.
-                    Faire la justice dans le monde de violence n'est qu'au deuxième millénaire avant notre ère.
-                    De même, la fidélité dont parlent les prophètes ne va pas plus de soi aujourd'hui qu'au temps de l'exil.
-                    Et l'invitation inouîe du pardon à laquelle nous convie Jésus est comme une sagesse extrême, prsquee au-délà du possible et atteignant cependant ce qu'il y a de plus profond dans le coeur de l'homme.
-                </p>
-                <h3>À savoir !!!</h3>
-                <p>
-                    Les croyants qui lisent la Bible y cherchent autre chose qu'un écho du passé ou une somme d'expérience. Au long de l'histoire biblique, un autre personnage intervient, sur lequel se fonde la continuité de l'histoire et sa npouveauté.
-                    À travers les événements, les personnages, le Dieu d'Abraham, d'Isaac et de Jacob se manifeste. Il fait connaître son dessein sur l'humanité. C'est ce qu'on appelle le <b>Révélation.</b>
-                    En Jésus-Christ, comme le proclamme la foi chrétienne, il l'accomplit en plénitude. C'est pourquoi la Bible est, pour nous les chrétiens, <b>Ecriture Sainte.</b>
-                </p>
-                <h3>Le point de vue des croyants</h3>
-                <p>
-                    On a, de fait, raison de parler alors des croyants. Car la Bible peut être lue, étudiée, travaillée par des gens qui cherchent ni ne pensent y trouver de <b>Révélation</b>, au moins dans le sens que les croyants attribuent à ce mot,
-                    qui désigne pour eux l'objet d'une foi : de leur foi. Pour ces lecteurs, ou ces savants, la Bible est un ensemble de documents anciens, de valeur littéraire inégale, mais extrêmement précieux, et dont plusieurs peuvent être considérés comme
-                    de remarquables témoins d'humanité.
-                </p>
-                <p>
-                    Parler de Révélation à propos de la Bible, c'est donc introduire un point de vue particulier. A vrai dire, un document, et notamment un document aussi complexe que la Bible s'aborde toujours necéssairement à partir d'un point de vue déterminé.
-                    Celui de l'histrien n'est pas le même que celui du linguiste, qui diffère à son tour de celui de l'ethnologue ou du poète.
-                    Ces points de vue ne sont pas pour autant opposés. Ils peuvent se compléter et même s'enrichir mutuellement.
-                </p>
-                <p>
-                    Ainsi le point de vue du croyant, qui l'amène à aborder la Bible comme porteuse de Révélation, ne l'empêche pas nécessairement de la considérer en même temps comme document d'histoire, comme trésor d'humanité...
-                    Il le pousse plut^t à la cerner sous tous ces aspects, pour qu'elle déploie tout ce contenu qui sera reçu comme Révélation.
-                </p>
-                <h3>Autre chose que la communication d'un savoir</h3>
-                <p>
-                    Car ce contenu est tout autre chose qu'une idée, et même un ensemble d'idées.
-                    Et à cet égard il n'est pas sans inconvénient de résumer, comme de la Bible dans ce mot relativement abstrait de Révélation.
-                </p>
-                <p>
-                    D'autant qu'il évoque facilement dans notre esprit l'idée d'un <em>savoir</em>, plus au moins ésotérique, portant sur des choses extraordinaires ou merveilleuses, entretenant surtout un rapport
-                    d'étrangeté avec le monde de notre expérience et de nos responsabilités. la Bible serait alors une sorte de recueil d'oracles à consulter, un peu comme on consulte un devin ou des cartomanciennes.
-                </p>
-                <p>
-                    Pour exprimer ce que représente la Bible pour les croyants, une autre expression est employée, celle <b>Parole de Dieu</b>. Elle a l'avantage de renvoyer à cette réalité fondamentale par laquelle s'opère pour nous très généralement la communication.
-                    Elle insinue que Dieu, dans la Bible, entre en communication avec les hommes comme les hommes entrent communication les uns avec les autres. Ainsi est-il souligné d'emblée que la Bible est aussi, pleinement, un livre humain.
-                </p>
-                <h3>Une déclaration d'amour</h3>
-                <p>
-                    Ce que, par contre, l'idée de Révélation a l'avantage de souligner, et qui est essentiel,
-                    ce que la Parole qui circule ne vient pas nous raconter ce que nous pourrions connaître par ailleurs,
-                    par exmeple en regardant les étoiles, ou en analysant les mouvements du coeur humain. De ce point de vue (qui est toujours celui du croyant), la Bible
-                    fait connaître quelque chose de radicalement neuf et d'inédit.
-                    Avec les mots, les images, les procédés littéraires (mythe, épopée, textes législatifs, poèmes...) que l'on peut trouver par ailleurs, elle porte
-                    un message aussi imprévisible, et aussi promoteur de nouveauté, qu'une déclaration d'amour. 
-                    Par elle se dévoilent une volonté et un coeur, dont les desseins s'inscrivent, en même temps que dans des mots, dans l'institution d'une Alliance et dans l'instauration
-                    d'une histoire.
-                </p>
-                <p>
-                    Réagissant contre une conception trop intellectuealiste de la Révélation, qui la ferait considérer fondamentalement comme la communication d'idées, le concile Vatican 2 souligne que c'est le Christ qui est <b>la pleinitude de la Révélation.</b>
-                </p>
-                <h3>Découvrir la  vie</h3>
-                <p>
-                    "Tu ne sais pas"... lance Jésus à Nicodème. <br>
-                    "Si tu savais..." dit-il à la Samaritaine. <br>
-                    "Nous savons..." lui répond Pierre. <br>
-                    Au fil des temps de l'évangile, nous percevons comment progresse la révélation.
-                </p>
-            </div>
+        <!------------------------About section-------------------------->
+        
 
-        </div>
-        <div class="max-width contents">
-            <h2 id="discipolat">Discipolat</h2>
-            <div class="content-text">
-
-            </div>
-        </div>
-        <div class="max-width contents">
-            <h2 id="vie_chretienne">La Vie Chrétienne</h2>
-            <div class="content-text">
-                
-            </div>
-        </div>
-        <div class="max-width contents">
-            <h2 id="vv_monde">Vivre dans ce monde</h2>
-            <div class="content-text">
-                
-            </div>
-        </div>
-        <div class="max-width contents ">
-            <h2 id="temoignage">Témoignage</h2>
-            <div class="main">
-                <div class="profile-test"></div>
-            </div>
-        </div>
-    </section>
-
-        <!-- footer section starts -->
-        <footer>
-            <span>Créer par <a href="https://dididnk.github.io/Portfolio/" target="_blank">DNK</a> | <span class="far fa-copyright"> 2021 tous
-                    droits reservés.</span></span>
-        </footer>
-
-
-    <script src="js/script.js"></script>
-</body>
+    </body>
 </html>

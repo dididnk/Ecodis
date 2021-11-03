@@ -1,0 +1,158 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: rgb(22, 189, 255);
+}
+/*----------------------------------Navbar section--------------------------------------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-color: black;
+    padding: 15px !important;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: rgb(19, 168, 255) !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.logo{
+    color: rgb(19, 168, 255) !important;
+    font-weight: 700;
+}
+.fa-bars
+{
+    color: rgb(19, 168, 255) !important;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+/*----------------------------------Banner section--------------------------------------*/
+#banner
+{
+    background: url("images/_bg.jpg") center center no-repeat;
+    color: rgb(19, 168, 255) !important;
+    padding: 5%;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.presentation-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.bottom-img
+{
+    width: 100%;
+}
+/* .zigzag
+{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: fixed;
+} */
+/*----------------------------------About section--------------------------------------*/
+#about
+{
+    padding: 20px 0;
+}
+.about-left-img
+{
+    width: 100%;
+    height: 75vh;
+}
+/*----------------------------------reference section--------------------------------------*/
+#reference
+{
+    padding: 30px 0;
+    height: 400px !important;
+}
+.reference-zone
+{
+    background: rgb(17, 16, 16);
+    color: white !important;
+}
+.reference-img
+{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.reference-1,
+.reference-2,
+.reference-3
+{
+    height: 80%;
+    border: 2px solid white;
+}
+
+.reference h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.title::before
+{
+    content: "";
+    background: black;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after
+{
+    content: "";
+    background: black;
+    height: 1px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+.reference .btn
+{
+    margin-top: 20px !important;
+}
+.reference .btn-primary,
+.reference .btn-success
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(3, 3, 88), rgb(12, 12, 201));
+}
+
+/*----------------------------------Contenu section--------------------------------------*/
