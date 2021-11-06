@@ -14,7 +14,7 @@ body
     font-family: sans-serif;
     box-sizing: border-box;
     text-decoration: none;
-    background: white;
+    background: rgb(248, 249, 250);
 }
 /* custom scroll bar */
 /* ::-webkit-scrollbar {
@@ -196,10 +196,7 @@ nav a:hover
     background: black;
     border: 2px solid white;
 }
-.reference-3
-{
-    height: 79%;
-}
+
 #reference-img-1,
 #reference-img-2,
 #reference-img-3
@@ -256,6 +253,11 @@ nav a:hover
 {
     margin: 100px 0;
 }
+.temoignage-theme
+{
+    width: 100%;
+    height: 80vh;
+}
 .temoignage
 {
     border-left: 4px solid #000;
@@ -277,7 +279,6 @@ nav a:hover
 /*----------------------------------Social-media section--------------------------------------*/
 #social-media
 {
-    background: rgb(247, 247, 247);
     padding: 100px 0;
 }
 .social-media
@@ -296,9 +297,10 @@ nav a:hover
     transform: translateY(-10px);
 }
 /*----------------------------------Footer section--------------------------------------*/
-#footer
+footer
 {
-    color: #000;
+    background: rgb(0, 1, 75);
+    color: rgb(248, 249, 250);
 }
 .footer-img
 {
@@ -311,7 +313,7 @@ nav a:hover
 }
 .footer-box .logo
 {
-    color: black !important;
+    color: rgb(248, 249, 250) !important;
     font-size: 40px;
     
 }
@@ -331,7 +333,7 @@ nav a:hover
 .footer-box a
 {
     text-decoration: none;
-    color: #000;
+    color: rgb(248, 249, 250);
 }
 .footer-box p
 {
@@ -340,7 +342,7 @@ nav a:hover
 
 hr
 {
-    background: #000;
+    background: rgb(248, 249, 250);
 }
 .copyright
 {
