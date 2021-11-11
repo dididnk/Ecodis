@@ -92,7 +92,7 @@ nav a:hover
 /*----------------------------------Banner section--------------------------------------*/
 #banner
 {
-    background: url("https://dididnk.github.io/Ecodis/images/menuPrincipalImg.jpg") center center no-repeat;
+    background: url("images/bg.jpg") center center no-repeat;
     color: rgb(214, 11, 33) !important;
     padding: 5%;
     height: 100vh;
