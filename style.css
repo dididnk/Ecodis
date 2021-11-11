@@ -16,49 +16,6 @@ body
     text-decoration: none;
     background: rgb(248, 249, 250);
 }
-/* custom scroll bar */
-/* ::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: rgb(1, 175, 236) !important;;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    border-bottom-width: 2px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
-.scroll-up-btn:hover{
-    filter: brightness(90%);
-} */
-
 /*----------------------------------All section--------------------------------------*/
 
 .title::before
@@ -102,7 +59,7 @@ body
     padding: 15px !important;
 }
 .logo{
-    color: rgb(1, 175, 236) !important;
+    color: rgb(214, 11, 33) !important;
     font-size: 25px !important;
     padding-left: 15px !important;
     font-weight: 700;
@@ -113,14 +70,14 @@ body
 }
 .navbar-nav li a
 {
-    color: rgb(1, 175, 236) !important;
+    color: rgb(214, 11, 33) !important;
     font-weight: 600;
     float: right;
     text-align: left;
 }
 .fa-bars
 {
-    color: rgb(1, 175, 236) !important;
+    color: rgb(214, 11, 33) !important;
     font-size: 30px !important;
 }
 .navbar-toggler
@@ -129,14 +86,14 @@ body
 }
 nav a:hover
 {
-    color: rgb(123, 220, 250) !important;
+    color: rgb(245, 40, 64) !important;
     font-size: 17px !important;
 }
 /*----------------------------------Banner section--------------------------------------*/
 #banner
 {
     background: url("https://dididnk.github.io/Ecodis/images/menuPrincipalImg.jpg") center center no-repeat;
-    color: rgb(1, 175, 236) !important;
+    color: rgb(214, 11, 33) !important;
     padding: 5%;
     height: 100vh;
     min-height: 500px;
@@ -180,8 +137,7 @@ nav a:hover
 }
 .reference:hover
 {
-    transform: translateY(-1px);
-    color: rgb(1, 175, 236) !important;
+    color: rgb(214, 11, 33) !important;
 }
 .reference-zone
 {
@@ -193,6 +149,7 @@ nav a:hover
 {
     border-radius: 5%;
     height: 80%;
+    height: 100%;
     background: black;
     border: 2px solid white;
 }
@@ -204,9 +161,17 @@ nav a:hover
     border-radius: 3% 3% 0 0;
     width: 100%;
     height: 20%;
-    margin-top: 20px;
 }
-
+.reference-footer,
+.reference-footer h4
+{
+    margin: auto;
+    padding: auto;
+}
+.reference-footer
+{
+    height: 80%;
+}
 /*----------------------------------Cours section--------------------------------------*/
 .cours-us
 {
@@ -276,6 +241,7 @@ nav a:hover
     display: inline-block;
     font-size: 12px;
 }
+
 /*----------------------------------Social-media section--------------------------------------*/
 #social-media
 {
@@ -296,10 +262,64 @@ nav a:hover
 {
     transform: translateY(-10px);
 }
+/*----------------------------------Newsletter section--------------------------------------*/
+.newsletter
+{
+    padding: 100px 0;
+    font-family: "montserrat", sans-serif;
+    background: url("images/newsletterImg3.png") center center no-repeat;
+    background: rgb(133, 123, 123);
+    color: rgb(214, 11, 33) !important;
+    padding: 5%;
+    height: 100vh;
+    background-size: cover;
+}
+.newsletter p
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+.email-box i, .btn, .tbox
+{
+    height: 40px;
+    outline: none;
+    border: none
+}
+.email-box i
+{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+.tbox
+{
+    width: 0px;
+}
+.email-box:hover > .tbox, .tbox:focus
+{
+    width: 260px;
+    padding: 0 10px;
+}
+.email-box .btn
+{
+    background: #2f3542;
+    color: rgb(214, 11, 33) !important;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.email-box .btn:hover
+{
+    background: rgb(214, 11, 33);
+    color:  #2f3542 !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 /*----------------------------------Footer section--------------------------------------*/
 footer
 {
-    background: rgb(0, 1, 75);
+    background: black;
     color: rgb(248, 249, 250);
 }
 .footer-img
@@ -328,7 +348,7 @@ footer
     padding-top: 7px;
     border-radius: 2px;
     border-radius: 50%;
-    background-image: linear-gradient(to right, rgb(7, 7, 199), rgb(10, 150, 192));
+    background-image: linear-gradient(to right, rgb(214, 11, 33), rgb(7, 7, 199));
 }
 .footer-box a
 {
