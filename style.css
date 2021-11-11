@@ -92,11 +92,14 @@ nav a:hover
 /*----------------------------------Banner section--------------------------------------*/
 #banner
 {
-    background: url("images/bg.jpg") center center no-repeat;
+    background: #000;
+}
+.banner
+{
+    background: url("https://cdn.pixabay.com/photo/2017/09/21/01/04/father-2770301_1280.jpg") center center no-repeat;
     color: rgb(214, 11, 33) !important;
     padding: 5%;
     height: 100vh;
-    min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -229,6 +232,10 @@ nav a:hover
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.temoignage-txt
+{
+    text-align: justify;
+}
 .temoignage img
 {
     border-radius: 50%;
@@ -246,12 +253,9 @@ nav a:hover
 #social-media
 {
     padding: 100px 0;
-}
-.social-media
-{
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 30px;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
 }
 .social-icons img
 {
@@ -262,16 +266,35 @@ nav a:hover
 {
     transform: translateY(-10px);
 }
+.contact-box
+{
+    background: rgb(252, 252, 252);
+}
+.contact-box .logo
+{
+    color:rgb(214, 11, 33) !important;
+    font-size: 25px;
+    font-weight: 500;
+}
+.contact-box p
+{
+    padding-top: 20px;
+    font-weight: 500;
+}
+.contact-img
+{
+    width: 60%;
+
+}
 /*----------------------------------Newsletter section--------------------------------------*/
 .newsletter
 {
     padding: 100px 0;
     font-family: "montserrat", sans-serif;
-    background: url("images/newsletterImg3.png") center center no-repeat;
-    background: rgb(133, 123, 123);
+    background-image: linear-gradient(to right, rgb(214, 11, 33), rgb(7, 7, 199));
     color: rgb(214, 11, 33) !important;
     padding: 5%;
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
 }
 .newsletter p
@@ -279,6 +302,11 @@ nav a:hover
     color: white;
     font-size: 15px;
     font-weight: 300;
+}
+.newsletter-content
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .email-box i, .btn, .tbox
 {
@@ -294,13 +322,10 @@ nav a:hover
 }
 .tbox
 {
-    width: 0px;
-}
-.email-box:hover > .tbox, .tbox:focus
-{
     width: 260px;
     padding: 0 10px;
 }
+
 .email-box .btn
 {
     background: #2f3542;
@@ -331,11 +356,15 @@ footer
 {
     padding: 20px;
 }
+.footer-box h5
+{
+    padding-bottom: 10px;
+}
 .footer-box .logo
 {
     color: rgb(248, 249, 250) !important;
     font-size: 40px;
-    
+    padding-bottom: 20px;
 }
 .footer-box .fa,
 .footer-box .fas
@@ -350,6 +379,7 @@ footer
     border-radius: 50%;
     background-image: linear-gradient(to right, rgb(214, 11, 33), rgb(7, 7, 199));
 }
+
 .footer-box a
 {
     text-decoration: none;
@@ -358,8 +388,12 @@ footer
 .footer-box p
 {
     text-transform: capitalize;
+    text-align: justify;
 }
-
+.txt
+{
+    padding-left: 10px;
+}
 hr
 {
     background: rgb(248, 249, 250);
