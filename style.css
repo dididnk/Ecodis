@@ -473,11 +473,17 @@ footer
     padding-bottom: 20px;
     text-align: center;
 }
-hr
-{
-    background-image: linear-gradient(to right, rgb(214, 11, 33), rgb(7, 7, 199));
-}
-.copyright
+
+.copyright,
+.copyright a
 {
     color: grey;
+}
+.copyright a:hover
+{
+    color: rgb(214, 11, 33) !important;
+}
+.copyright a
+{
+    text-decoration: none;
 }
